@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="flex">
+        <div class="bg-img">
+            <div class="cards">
+     <div class="card-1">
+        <div class="card1a">
+            <div class="first-rounded-contain">
+         <div class="first-rounded">
+         
+         </div>
+         <div class="second-rounded">
+
+         </div>
+            </div>
+
+            <div class="paragraph">
+            <p id="card-number" style="color: hsl(0, 0%, 100%); font-size: 22px; font-weight: 500; letter-spacing: 2px; padding-top: 50px;">0000 0000 0000 0000</p>
+            
+            </div>
+            <div class="jane" style="display:flex; gap: 80px; padding-top: 20px">
+             <h2 id="card-name" style="color: hsl(0, 0%, 100%); font-size: 1rem; font-weight: 500;">JANE APPESEED</h2>
+             <div style="display: flex; gap: 3px">
+                 <P id="card-month" style="color: hsl(0, 0%, 100%);font-weight: 500; font-size: 15px; ">00</P>
+             </div>
+            </div>
+        </div>
+     </div>
+     <div class="card-2">
+        <div class="card2a">
+            <div class="strip">
+           <div class="black-strip">
+
+           </div>
+           <div class="grey-strip">
+            <p class="grey-para" id="card-cvc" style="font-size: 15px; font-style: italic; color: black; font-weight: bold; display: flex; justify-content: flex-end; padding-right: 10px; letter-spacing: 2px;">000</p>
+           </div> 
+            </div>
+
+            <div class="dotted-strip" style="display: flex; flex-direction: column; gap: 5px;">
+             <div class="first-dotted" style="display: flex; gap: 5px; width: 90%; margin: 0 auto; padding-top: 20px; justify-content: center; align-items: center;">
+              <div class="a" style="height: 3px; width: 80px; border-radius: 5px; background-color: hsl(270, 3%, 87%);"></div>
+              <div class="b" style="height: 3px; width: 20px; border-radius: 5px; background-color: hsl(270, 3%, 87%)"></div>
+              <div class="c" style="height: 3px; width: 20px; border-radius: 5px; background-color: hsl(270, 3%, 87%)"></div>
+              <div class="d" style="height: 3px; width: 10px; border-radius: 5px; background-color: hsl(270, 3%, 87%)"></div>
+             </div>
+
+             <div class="second-dotted" style="display: flex; gap: 5px; width: 90%; margin: 0 auto; justify-content: center; align-items: center;">
+                <div class="e" style="height: 3px; width: 20px; border-radius: 5px; background-color: hsl(270, 3%, 87%)"></div>
+                <div class="f" style="height: 3px; width: 50px; border-radius: 5px; background-color: hsl(270, 3%, 87%)"></div>
+                <div class="g" style="height: 3px; width: 40px; border-radius: 5px; background-color: hsl(270, 3%, 87%)"></div>
+                <div class="h" style="height: 3px; width: 6px; border-radius: 5px; background-color: hsl(270, 3%, 87%)"></div>
+               </div>
+
+               <div class="second-dotted" style="display: flex; gap: 5px; width: 90%; margin: 0 auto; justify-content: center; align-items: center;">
+                <div class="e" style="height: 3px; width: 6px; border-radius: 5px; background-color: hsl(270, 3%, 87%)"></div>
+                <div class="f" style="height: 3px; width: 20px; border-radius: 5px; background-color: hsl(270, 3%, 87%)"></div>
+                <div class="g" style="height: 3px; width: 20px; border-radius: 5px; background-color: hsl(270, 3%, 87%)"></div>
+                <div class="h" style="height: 3px; width: 80px; border-radius: 5px; background-color: hsl(270, 3%, 87%)"></div>
+               </div>
+            </div>
+
+        </div>
+     </div>
+        </div>
+        </div>
+
+        <div class="bg-text">
+       <div>
+        <form id="form">
+            <div class="form-name" style="display: flex; flex-direction: column; letter-spacing: 1px;">
+                <label for="name">CARDHOLDER NAME</label>
+                <input type="text" id="input-name" name="cardholder" placeholder="e.g Jane Appleseed" maxlength="20" required>
+                <span class="letter-span">Field can't be empty</span>
+            </div>
+
+            <div class="form-number" style="display: flex; flex-direction: column; letter-spacing: 1px;">
+                <label for="number">CARD NUMBER</label>
+                <input type="text" id="input-number" name="cardnumber" placeholder="e.g 1234 5678 9123 000" maxlength="19" required>
+                <span class="first-span">Wrong format, numbers only</span>
+            </div>
+
+            <div class="form-date-container" style="display: flex; gap: 58px;">
+                <div style="display: flex; flex-direction: column;">
+                    <label for="calendar">EXP. DATE</label>
+                        <div class="form-month" style="display: flex; gap: 10px;">
+                            <input type="month" id="input-month" placeholder="MM" required>
+                        </div>
+                        <span class="second-span">Can't be blank</span>
+                </div>
+                <div class="form-cvc" style="display: flex; flex-direction: column;">
+                    <label for="cvc">CVC</label>
+                    <input type="text" placeholder="e.g. 123" id="input-cvc" maxlength="3" required>
+                    <span class="third-span">Can't be blank</span>
+                </div>
+            </div>
+            
+
+        </form>
+        <div id="complete" style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 20px; display: none;">
+            <div><img src="./images/icon-complete.svg" alt="" width="70px"></div>
+            <h2 id="sucess" style="text-align: center; padding-bottom: 15px;">THANK YOU!</h2>
+            <p id="getname" style="text-align: center; font-size: 20px; padding-bottom: 15px;">damilola</p>
+            <P style="text-align: center;">We've added your card details</P>
+           </div>
+           <button type="submit" id="submit">Confirm</button>
+       </div>
+       
+        </div>
+    </section>
+ <script src="./index.js"></script>   
+</body>
+</html>
